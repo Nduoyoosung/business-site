@@ -1,0 +1,278 @@
+@media screen and (max-width:920px) {
+  :root{
+    --color1: #08254F;
+    --color2: rgb(0, 128, 179);
+    --color3: rgb(128, 128, 128);
+    --footer: #03132A;
+  }
+  
+  /* header two */
+label{
+  display: block;
+  font-size: 30px;
+  background-color: var(--color2);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+.open-menu{
+  float: right;
+}
+
+nav ul{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  margin-top: -1px;
+  width: 60%;
+  background-color: var(--footer);
+  z-index: 2;
+  transform: translateX(100%);
+  height: 100vh;
+  padding-bottom: 30px;
+  right: 0;
+  transition: .50s ease-in;
+  overflow: auto;
+  border-left: 5px solid rgb(0, 128, 179);
+}
+nav ul .nav-links{
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  text-align: center;
+  border-top: 0;
+  margin-top: 20px;
+}
+nav ul .nav-links li{
+  margin-top: 10px;
+}
+
+nav input:checked ~ ul{
+  transform: translateX(0);
+}
+nav ul li a::after{
+  display: none;
+}
+}
+
+
+@media screen and (max-width:850px) {
+  header{width: 90%;}
+  .first-page aside{width: 90%;}
+  .trnas-type-wrap{width: 90%;}
+  .about{width: 90%;}
+  .services .wrap{width: 90%;}
+  footer .wrap{width: 90%;}
+
+  
+.trans-type-wrap .col h3{
+  font-size: 16px;
+}
+}
+
+
+@media screen and (max-width:740px) {
+  /* trans-type-wrap */
+  .trans-type-wrap{
+    width: 90%;
+  }
+
+ .why-us{
+  width: 80%;
+ }
+ .about .row{
+  margin-top: 6rem;
+ }
+ .about .row .factory{
+  width: 45%;
+  margin-top: 30px;
+ }
+ .about .row .cmp-detl{
+  width: 45%;
+  margin-top: 30px;
+ }
+
+ .services .wrap .box1{
+  width: 45%;
+ }
+ .services .wrap .box{
+  width: 45%;
+ }
+
+ footer{
+  padding-top: 45px;
+ }
+  footer .wrap .col{
+    width: 45%;
+    margin-top: 30px;
+  }
+  footer .wrap .brand{
+    width: 45%;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+@media screen and (max-width:660px) {
+  /* trans-type-wrap */
+  .trans-type-wrap{
+    justify-content: center;
+  }
+  .trans-type-wrap .col{
+    width: 33.3%;
+  }
+  .trans-type-wrap .col:nth-child(1){
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .trans-type-wrap .col:nth-child(5){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .about .wrap .image{
+   display: none;
+  }
+  .about .wrap .text{
+    width: 100%;
+  }
+  .about .row .factory{
+   width: 47%;
+  }
+  .about .row .cmp-detl{
+   width: 47%;
+  }
+  
+ .services .wrap .box1{
+  width: 47%;
+ }
+ .services .wrap .box{
+  width: 47%;
+ }
+ 
+ footer .wrap .col{
+  width: 47%;
+}
+footer .wrap .brand{
+  width: 47%;
+}
+}
+
+
+
+@media screen and (max-width:600px) {
+  .trans-type-wrap .col{
+    width: 50%;
+  }
+
+  .about .row .factory{
+   width: 100%;
+  }
+  .about .row .cmp-detl{
+   width: 100%;
+  }
+  .about .row .factory .img{
+    height: 15rem;
+  }
+  
+ .services .wrap .box1{
+  width: 100%;
+ }
+ .services .wrap .box{
+  width: 100%;
+ }
+ 
+ footer .wrap .col{
+  width: 47%;
+}
+footer .wrap .brand{
+  width: 47%;
+}
+}
+
+
+@media screen and (max-width:500px) {
+  header.sticky{
+    background-color: var(--color1);
+  }
+
+  header{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+  .header1-wrap .hd-contact{
+    display: none;
+  }
+  nav ul{
+    width: 80%;
+  }
+
+  .why-us{
+    width: 100%;
+  }
+
+  footer .wrap .col{
+    width: 100%;
+  }
+  footer .wrap .brand{
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width:370px){
+.why-us .flex-wrap{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.why-us .flex-wrap .box{
+  width: 50%;
+}
+.why-us .flex-wrap .box:nth-child(3)::after{
+  width: 2px;
+  height: 28%;
+  left: 49.5%;
+  top: -22%;
+}
+}
+
+
+@media screen and (max-width:370px){
+  .trans-type-wrap .col{
+    width: 70%;
+  }
+
+}
+
+
+@media screen and (max-width:338px){
+.why-us .flex-wrap .box{
+  width: 70%;
+  margin-top: 5px;
+}
+.why-us .flex-wrap .box:nth-child(2)::after{
+  width: 2px;
+  height: 25%;
+  left: 49.7%;
+  top: -18%;
+}
+.why-us .flex-wrap .box:nth-child(3)::after{
+  height: 25%;
+  top: -18%;
+}
+}
